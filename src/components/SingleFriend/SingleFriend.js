@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 const SingleFriend = ({ friend }) => {
         const navigate = useNavigate();
+        // Dynamic Path:
         const showFriend = () => {
                 const path = `/friend/${friend.id}`;
                 navigate(path)
